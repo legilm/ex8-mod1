@@ -1,4 +1,6 @@
-```r
+if (!require('ggplot2')) install.packages('ggplot2'); library('ggplot2')
+if (!require('dplyr')) install.packages('ggplot2'); library('ggplot2')
+
 # Load necessary libraries
 library(ggplot2)
 library(dplyr)
@@ -25,4 +27,7 @@ ggplot(mtcars, aes(x = hp, y = mpg, color = cyl_factor)) +
        y = "Miles Per Gallon (MPG)",
        color = "Cylinders") +
   theme_minimal()
+
+install.packages("ggplot2")
+install.packages("dplyr")
 ```
